@@ -17,6 +17,10 @@
 		F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE872A66A0AC00A5CD61 /* PastView.swift */; };
 		F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */; };
 		F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */; };
+		F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */; };
+		F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE922A66AC2500A5CD61 /* Currency.swift */; };
+		F031FE992A66E37A00A5CD61 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = F031FE982A66E37A00A5CD61 /* PopupView */; };
+		F031FE9B2A66E78D00A5CD61 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE9A2A66E78D00A5CD61 /* PopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,9 @@
 		F031FE872A66A0AC00A5CD61 /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
 		F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAmountView.swift; sourceTree = "<group>"; };
+		F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
+		F031FE922A66AC2500A5CD61 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F031FE9A2A66E78D00A5CD61 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F031FE992A66E37A00A5CD61 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,8 @@
 		F031FE6B2A669F5100A5CD61 /* MarsCase */ = {
 			isa = PBXGroup;
 			children = (
+				F031FE942A66E07500A5CD61 /* Extension */,
+				F031FE912A66AC1300A5CD61 /* Model */,
 				F031FE8C2A66A3A800A5CD61 /* CustomViews */,
 				F031FE812A669FAE00A5CD61 /* View */,
 				F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */,
@@ -91,6 +101,7 @@
 				F031FE852A66A06600A5CD61 /* MainView.swift */,
 				F031FE872A66A0AC00A5CD61 /* PastView.swift */,
 				F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */,
+				F031FE9A2A66E78D00A5CD61 /* PopupView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,8 +110,24 @@
 			isa = PBXGroup;
 			children = (
 				F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */,
+				F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F031FE912A66AC1300A5CD61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE922A66AC2500A5CD61 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F031FE942A66E07500A5CD61 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +146,9 @@
 			dependencies = (
 			);
 			name = MarsCase;
+			packageProductDependencies = (
+				F031FE982A66E37A00A5CD61 /* PopupView */,
+			);
 			productName = MarsCase;
 			productReference = F031FE692A669F5100A5CD61 /* MarsCase.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +177,9 @@
 				Base,
 			);
 			mainGroup = F031FE602A669F5000A5CD61;
+			packageReferences = (
+				F031FE972A66E37A00A5CD61 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = F031FE6A2A669F5100A5CD61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,11 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F031FE9B2A66E78D00A5CD61 /* PopupView.swift in Sources */,
+				F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */,
 				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
 				F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */,
 				F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */,
 				F031FE6F2A669F5100A5CD61 /* ContentView.swift in Sources */,
 				F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */,
+				F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */,
 				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
 				F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */,
 				F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */,
@@ -381,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F031FE972A66E37A00A5CD61 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F031FE982A66E37A00A5CD61 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F031FE972A66E37A00A5CD61 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */ = {

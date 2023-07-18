@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct CurrentAmountView: View {
+    let amount:Double
     var body: some View {
         VStack {
             HStack {
                 
-                Text("TL 578,00").font(.largeTitle).padding(.trailing)
+                Text(String(amount)).font(.largeTitle).padding(.trailing)
                 Image("tc")
                     .resizable().frame(width: 25,height: 25,alignment: .center).cornerRadius(12.5)
                 Button {
@@ -41,6 +42,6 @@ struct CurrentAmountView: View {
 
 struct CurrentAmountView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentAmountView()
+        CurrentAmountView(amount: 6573.98)
     }
 }
