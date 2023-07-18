@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State var showingPopup = false
-    var amounts:[Currency] = [.init(image: "abd", name: "Dolar", amount: "20.45"),.init(image: "ab", name: "Euro", amount: "19,20"),.init(image: "eng", name: "Sterlin", amount: "25,45"),.init(image: "rus", name: "Rus Rublesi", amount: "20,45"),.init(image: "china", name: "Yuan", amount: "20.45")]
+    var amounts:[Currency] = [.init(image: "abd", name: "Dolar", amount: "20.45",sign: Constant.dolar),.init(image: "ab", name: "Euro", amount: "19,20",sign: Constant.euro),.init(image: "eng", name: "Sterlin", amount: "25,45",sign: Constant.sterlin),.init(image: "rus", name: "Rus Rublesi", amount: "20,45",sign: Constant.ruble),.init(image: "china", name: "Yuan", amount: "20.45",sign: Constant.yuan)]
     @State var amount : Double = 2315.9123
     var body: some View {
         ZStack {
@@ -21,7 +21,7 @@ struct MainView: View {
                 
                 List {
                     ForEach(amounts) { item in
-                        CurrencyList(image: item.image, name: item.name, amount: item.amount)
+                        CurrencyList(currency: item)
                 }
                 
                 }

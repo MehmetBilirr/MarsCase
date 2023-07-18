@@ -21,6 +21,8 @@
 		F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE922A66AC2500A5CD61 /* Currency.swift */; };
 		F031FE992A66E37A00A5CD61 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = F031FE982A66E37A00A5CD61 /* PopupView */; };
 		F031FE9B2A66E78D00A5CD61 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE9A2A66E78D00A5CD61 /* PopupView.swift */; };
+		F031FE9F2A66E9DA00A5CD61 /* CornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE9E2A66E9DA00A5CD61 /* CornerImage.swift */; };
+		F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FEA12A66EC7700A5CD61 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
 		F031FE922A66AC2500A5CD61 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		F031FE9A2A66E78D00A5CD61 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		F031FE9E2A66E9DA00A5CD61 /* CornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerImage.swift; sourceTree = "<group>"; };
+		F031FEA12A66EC7700A5CD61 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		F031FE6B2A669F5100A5CD61 /* MarsCase */ = {
 			isa = PBXGroup;
 			children = (
+				F031FEA02A66EC6C00A5CD61 /* Helper */,
 				F031FE942A66E07500A5CD61 /* Extension */,
 				F031FE912A66AC1300A5CD61 /* Model */,
 				F031FE8C2A66A3A800A5CD61 /* CustomViews */,
@@ -111,6 +116,7 @@
 			children = (
 				F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */,
 				F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */,
+				F031FE9E2A66E9DA00A5CD61 /* CornerImage.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -128,6 +134,14 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F031FEA02A66EC6C00A5CD61 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F031FEA12A66EC7700A5CD61 /* Constant.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +224,12 @@
 				F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */,
 				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
 				F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */,
+				F031FE9F2A66E9DA00A5CD61 /* CornerImage.swift in Sources */,
 				F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */,
 				F031FE6F2A669F5100A5CD61 /* ContentView.swift in Sources */,
 				F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */,
 				F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */,
+				F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */,
 				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
 				F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */,
 				F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */,

@@ -8,13 +8,48 @@
 import SwiftUI
 
 struct PopUpView: View {
+    let currency:Currency
+    @State var money:String = ""
+    @State var totalCost:String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+           
+            CornerImage(imageName: currency.image, frame: 100).padding(.all)
+            Text("₺ \(currency.amount)").font(.title).foregroundColor(.green).padding(.all)
+            Text("Satın almak istediğiniz \(currency.name)").font(.body)
+            HStack {
+                
+                TextField("Tutar giriniz", text: $money).onChange(of: money) {
+                    getTotalCost(amount: $0)
+                }.padding(.leading).keyboardType(.numberPad)
+                Text(currency.sign).padding(.trailing).font(.title)
+            }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
+            
+            Text("Toplam Maliyet").font(.body).padding(.trailing)
+            HStack {
+                TextField("", text: $totalCost).padding(.leading).disabled(true)
+                Text(currency.sign).font(.title).padding(.trailing)
+            }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
+            
+            Button {
+                
+            } label: {
+                Text("Satın Al").frame(width: 200,height: 30)
+            }.padding(.trailing).buttonStyle(.borderedProminent).tint(.black)
+
+        }.background(.white)
+    }
+    
+    private func getTotalCost(amount:String){
+        guard let doubleNumber = Double(amount), let rate = Double(currency.amount) else {return}
+        self.totalCost = String(doubleNumber * rate)
+        print(totalCost)
+       
     }
 }
 
 struct PopUpView_Previews: PreviewProvider {
     static var previews: some View {
-        PopUpView()
+        PopUpView(currency: Currency.fake)
     }
 }

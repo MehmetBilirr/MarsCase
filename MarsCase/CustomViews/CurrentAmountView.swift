@@ -14,8 +14,7 @@ struct CurrentAmountView: View {
             HStack {
                 
                 Text(String(amount)).font(.largeTitle).padding(.trailing)
-                Image("tc")
-                    .resizable().frame(width: 25,height: 25,alignment: .center).cornerRadius(12.5)
+                CornerImage(imageName: "tc", frame: 25)
                 Button {
                     
                 } label: {
