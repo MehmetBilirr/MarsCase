@@ -13,6 +13,10 @@
 		F031FE742A669F5100A5CD61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */; };
 		F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE752A669F5100A5CD61 /* Persistence.swift */; };
 		F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */; };
+		F031FE862A66A06600A5CD61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE852A66A06600A5CD61 /* MainView.swift */; };
+		F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE872A66A0AC00A5CD61 /* PastView.swift */; };
+		F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */; };
+		F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F031FE752A669F5100A5CD61 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F031FE782A669F5100A5CD61 /* MarsCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsCase.xcdatamodel; sourceTree = "<group>"; };
 		F031FE7A2A669F5100A5CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F031FE852A66A06600A5CD61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F031FE872A66A0AC00A5CD61 /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
+		F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAmountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		F031FE6B2A669F5100A5CD61 /* MarsCase */ = {
 			isa = PBXGroup;
 			children = (
+				F031FE8C2A66A3A800A5CD61 /* CustomViews */,
+				F031FE812A669FAE00A5CD61 /* View */,
 				F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */,
 				F031FE6E2A669F5100A5CD61 /* ContentView.swift */,
 				F031FE702A669F5100A5CD61 /* Assets.xcassets */,
@@ -73,6 +83,24 @@
 				F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F031FE812A669FAE00A5CD61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE852A66A06600A5CD61 /* MainView.swift */,
+				F031FE872A66A0AC00A5CD61 /* PastView.swift */,
+				F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F031FE8C2A66A3A800A5CD61 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE8D2A66A3DC00A5CD61 /* CurrentAmountView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +175,12 @@
 			files = (
 				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
 				F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */,
+				F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */,
 				F031FE6F2A669F5100A5CD61 /* ContentView.swift in Sources */,
+				F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */,
+				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
 				F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */,
+				F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
