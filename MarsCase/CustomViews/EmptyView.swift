@@ -10,7 +10,8 @@ import SwiftUI
 struct EmptyView: View {
     var body: some View {
       VStack {
-        Image("sad")
+        Image("sad").resizable().frame(width: 100, height: 100).padding()
+        Text("Henüz bir işlemin bulunmuyor.").padding()
       }
     }
 }
