@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrentAmountView: View {
+    
     let amount:Double
     var body: some View {
         VStack {

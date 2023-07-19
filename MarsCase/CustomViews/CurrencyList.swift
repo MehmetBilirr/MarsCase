@@ -20,7 +20,7 @@ struct CurrencyList: View {
            
             VStack {
                 Text(currency.name).font(.subheadline).frame(alignment: .leading)
-                Text("\(currency.amount) \(currency.sign)").foregroundColor(.green).frame(alignment: .leading)
+              Text("\(currency.amount.asCurrencyWith2Decimals()) \(currency.sign)").foregroundColor(.green).frame(alignment: .leading)
                 
             }.padding(.leading)
             
