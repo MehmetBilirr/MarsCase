@@ -16,28 +16,28 @@ struct PopUpView: View {
         NavigationView {
             VStack {
                
-                CornerImage(imageName: currency.image, frame: 100)
-                Text("₺ \(currency.amount)").font(.title).foregroundColor(.green).padding(.all)
-                Text("Satın almak istediğiniz \(currency.name)").font(.body)
+              CornerImage(imageName: currency.image.rawValue, frame: 100).padding(.all)
+              Text("₺ \(pow(currency.amount,-1).asCurrencyWith2Decimals())").font(.title).foregroundColor(.green).padding(.all)
+              Text("Satın almak istediğiniz \(currency.name.rawValue)").font(.body)
                 HStack {
                     
                     TextField("Tutar giriniz", text: $money).onChange(of: money) {
                         getTotalCost(amount: $0)
                     }.padding(.leading).keyboardType(.numberPad)
-                    Text(currency.sign).padding(.trailing).font(.title)
+                  Text(currency.sign.rawValue).padding(.trailing).font(.title)
                 }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
                 
                 Text("Toplam Maliyet").font(.body).padding(.trailing)
                 HStack {
-                    TextField("", text: $totalCost).padding(.leading).disabled(true)
-                    Text(currency.sign).font(.title).padding(.trailing)
+                  TextField("", text: $totalCost).padding(.leading).disabled(true)
+                  Text(CurrencySign.tl.rawValue).font(.title).padding(.trailing)
                 }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
                 
                 Button {
                     
                 } label: {
                     Text("Satın Al").frame(width: 200,height: 30)
-                }.padding(.trailing).buttonStyle(.borderedProminent).tint(.black)
+                }.padding(.all).buttonStyle(.borderedProminent).tint(.black)
                 Spacer()
 
             }.background(.white)
@@ -47,8 +47,8 @@ struct PopUpView: View {
     
     private func getTotalCost(amount:String){
       guard let doubleNumber = Double(amount) else {return}
-                self.totalCost = String(doubleNumber * currency.amount)
-        print(totalCost)
+      let total = doubleNumber * pow(currency.amount,-1)
+      self.totalCost = total.asCurrencyWith2Decimals()
        
     }
 }

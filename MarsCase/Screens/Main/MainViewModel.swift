@@ -14,7 +14,7 @@ class MainViewModel:ObservableObject {
   private let webService = WebService()
   private var cancellables: Set<AnyCancellable>
   @Published var currencies : [Currency]
-
+  private var dic = [String:Double]()
 
   init(cancellables: Set<AnyCancellable> = [], currencies: [Currency] = [Currency]()) {
     self.cancellables = cancellables
@@ -38,11 +38,23 @@ class MainViewModel:ObservableObject {
           }.store(in: &cancellables)
   }
 
-  private func getCurrencies(data:[String:Double]){
+  private func getCurrencies(data:[String:[String:Double]]){
 
-    guard let dolar = data["USD"], let euro = data["EUR"], let sterlin = data["GBP"],let ruble = data["RUB"], let yuan = data["CNY"] else {return}
+    guard let twoDaysBefore:[String:Double] = data[Constant.twoDayBefore] else {return}
 
-    currencies = [.init(image: "abd", name: "Dolar", amount: dolar, sign: Constant.dolar),.init(image: "ab", name: "Euro", amount: euro, sign: Constant.euro),.init(image: "eng", name: "Sterlin", amount: sterlin, sign: Constant.sterlin),.init(image: "rus", name: "Ruble", amount: ruble, sign: Constant.ruble),.init(image: "china", name: "Yuan", amount: yuan, sign: Constant.yuan)]
+    guard let yesterday:[String:Double] = data[Constant.yesterday] else {return}
+
+
+        guard let dolar = yesterday[CurrencyCode.dolar.rawValue], let euro = yesterday[CurrencyCode.euro.rawValue], let sterlin = yesterday[CurrencyCode.sterlin.rawValue],let ruble = yesterday[CurrencyCode.ruble.rawValue], let yuan = yesterday[CurrencyCode.yuan.rawValue] else {return}
+
+    guard let dolar2 = twoDaysBefore[CurrencyCode.dolar.rawValue], let euro2 = twoDaysBefore[CurrencyCode.euro.rawValue], let sterlin2 = twoDaysBefore[CurrencyCode.sterlin.rawValue],let ruble2 = twoDaysBefore[CurrencyCode.ruble.rawValue], let yuan2 = twoDaysBefore[CurrencyCode.yuan.rawValue] else {return}
+
+    currencies = [.init(image: .dolar, name: .dolar, amount: dolar, sign: .dolar,substract: diff(num1: dolar, num2: dolar2)),.init(image: .euro, name: .euro, amount: euro, sign: .euro,substract: diff(num1: euro, num2: euro2)),.init(image: .sterlin, name: .sterlin, amount: sterlin, sign: .sterlin,substract: diff(num1: sterlin, num2: sterlin2)),.init(image: .ruble, name: .ruble, amount: ruble, sign: .ruble,substract: diff(num1: ruble, num2: ruble2)),.init(image: .yuan, name: .yuan, amount: yuan, sign: .yuan,substract: diff(num1: yuan, num2: yuan2))]
 
   }
+  
+  private func diff(num1:Double,num2:Double)-> Double {
+    return num1 - num2
+  }
+
 }

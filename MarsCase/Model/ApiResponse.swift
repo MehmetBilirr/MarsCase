@@ -8,6 +8,6 @@
 import Foundation
 
 struct ApiResponse: Codable {
-    let data: [String: Double]
+  let data: [String: [String: Double]]
 }
 

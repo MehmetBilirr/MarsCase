@@ -10,14 +10,17 @@ import Foundation
 
 enum Route {
 
+
+
   static let baseUrl = "https://api.freecurrencyapi.com/v1"
   case getData
 
   var description:String {
-    return "/latest?apikey=\(Constant.api_key)&currencies=\(Constant.currencies)&base_currency=TRY"
+    return "/historical?apikey=\(Constant.api_key)&currencies=\(Constant.currencies)&base_currency=TRY&date_from=\(Constant.twoDayBefore)T15%3A46%3A39.983Z&date_to=\(Constant.yesterday)T15%3A46%3A39.983Z"
   }
 
     var method:Method {
+      
       return .get
     }
 

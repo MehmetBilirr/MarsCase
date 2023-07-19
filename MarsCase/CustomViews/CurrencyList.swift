@@ -16,14 +16,15 @@ struct CurrencyList: View {
         
         HStack {
             
-            CornerImage(imageName: currency.image, frame: 50).padding(.leading)
+          CornerImage(imageName: currency.image.rawValue, frame: 50).padding(.leading)
            
             VStack {
-                Text(currency.name).font(.subheadline).frame(alignment: .leading)
-              Text("\(currency.amount.asCurrencyWith2Decimals()) \(currency.sign)").foregroundColor(.green).frame(alignment: .leading)
+              Text(currency.name.rawValue).font(.subheadline).frame(alignment: .leading)
+              Text("\(pow(currency.amount,-1).asCurrencyWith2Decimals()) \(CurrencySign.tl.rawValue)").foregroundColor(currency.substract < 0.00 ? .green : .red).frame(alignment: .leading)
                 
             }.padding(.leading)
-            
+
+          Image(systemName:currency.substract < 0.00 ? "arrow.up" : "arrow.down").padding(.top).foregroundColor(currency.substract < 0.00 ? .green : .red)
             Spacer()
             Button("Satın Al") {
                 showingPopup = true
@@ -42,6 +43,6 @@ struct CurrencyList: View {
 
 struct CurrencyList_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyList(currency: Currency.fake)
+      CurrencyList(currency: .init(image: .yuan, name: .dolar, amount: 13213, sign: .tl,substract: 0.1))
     }
 }

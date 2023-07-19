@@ -9,11 +9,12 @@ import Foundation
 
 struct Currency:Identifiable {
     var id: String = UUID().uuidString
-    static let fake = Self.init(image: "rus", name: "Turkish Lira", amount: 0,sign: Constant.tl)
-    let image:String
-    let name:String
+  static let fake = Self.init(image: .ruble, name: .tl, amount: 0,sign: .tl,substract: 1)
+    let image:CurrencyImageName
+    let name:CurrencyName
     let amount:Double
-    let sign:String
+    let sign:CurrencySign
+   let substract:Double
 }
 
 

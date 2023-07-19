@@ -10,10 +10,8 @@ import SwiftUI
 struct PastView: View {
     var body: some View {
         VStack {
-            Text("adasd")
-            Divider()
-            Spacer()
-        }.background(Color.yellow)
+            EmptyView()
+        }.background(Color.white)
         
     }
 }
