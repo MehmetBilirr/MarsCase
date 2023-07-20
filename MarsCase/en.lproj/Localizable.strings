@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  MarsCase
+
+  Created by Mehmet Bilir on 20.07.2023.
+  
+*/
+
+
+"say_hi" = "Hello Mehmet Bilir!";
+"wallet_no" = "Wallet ID:53123423";
+"buy_it" = "Purchase";
+"empty_message" = "There is no action yet.";
+"purchase_d" = "Purchased";
+"home"= "Home";
+"past" = "History";
+"enter" = "Enter the amount.";
+"enter_amount" = "Enter the amount you want to buy.";
+"total_cost" = "Total Cost";
+"amount_purchased" = "Received Price:";

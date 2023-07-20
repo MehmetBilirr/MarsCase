@@ -13,12 +13,18 @@ struct SavedCurrencyListView: View {
       HStack {
         CornerImage(imageName: savedCurrent.image, frame: 50)
         VStack {
-          ScaleText(text: "\(savedCurrent.name) Satın Alım")
-          ScaleText(text: "Alınan fiyat: \(savedCurrent.amount.reverse.asCurrencyWith2Decimals())").font(.footnote).foregroundColor(.gray).padding(.top,1).padding(.bottom,1)
-          ScaleText(text: savedCurrent.date.dateAndTimetoString()).font(.footnote).foregroundColor(.gray)
-        }.padding(.leading)
+          HStack  {
+            Text(savedCurrent.name)
+            Text("purchase_d")
+          }
+          HStack  {
+            Text("amount_purchased")
+            Text(savedCurrent.amount.reverse.asCurrencyWith2Decimals())
+          }.font(.footnote).foregroundColor(.gray).padding(.top,1)
+          Text( savedCurrent.date.dateAndTimetoString()).font(.footnote).foregroundColor(.gray).padding(.top,1)
+        }.layoutPriority(0.5)
         Spacer()
-        ScaleText(text: "\(savedCurrent.sign) \(savedCurrent.total)").font(.title2).padding(.leading).foregroundColor(.green)
+        Text("\(savedCurrent.sign) \(savedCurrent.total.currencyFormatting())").font(.title3).foregroundColor(.green).lineLimit(1)
         
       }
     }
@@ -26,6 +32,6 @@ struct SavedCurrencyListView: View {
 
 struct SavedCurrencyListView_Previews: PreviewProvider {
     static var previews: some View {
-      SavedCurrencyListView(savedCurrent: SavedCurrency())
+      SavedCurrencyListView(savedCurrent:SavedCurrency())
     }
 }

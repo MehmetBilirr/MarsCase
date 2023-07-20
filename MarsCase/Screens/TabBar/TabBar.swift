@@ -12,12 +12,12 @@ struct TabBarView: View {
         TabView {
             MainView()
                 .tabItem {
-                    Label("Anasayfa", systemImage: "house")
+                    Label("home", systemImage: "house")
                 }
 
             PastView()
                 .tabItem {
-                    Label("Geçmiş İşlemler", systemImage: "clock.arrow.circlepath")
+                    Label("past", systemImage: "clock.arrow.circlepath")
                 }
         }
     }

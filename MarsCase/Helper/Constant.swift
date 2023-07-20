@@ -26,45 +26,66 @@ struct Constant {
 
 }
 
+enum CurrencyType {
 
-enum CurrencySign :String {
+  case tl
+  case dolar
+  case sterlin
+  case euro
+  case ruble
+  case yuan
 
-  case tl = "₺"
-  case dolar = "$"
-  case sterlin = "£"
-  case euro = "€"
-  case ruble = "₽"
-  case yuan = "¥"
+  var sign:String {
+    switch self {
+    case .tl:
+      return "₺"
+    case .dolar:
+      return "$"
+    case .sterlin:
+      return "£"
+    case .euro:
+      return "€"
+    case .ruble:
+      return "₽"
+    case .yuan:
+      return "¥"
+    }
+  }
+
+  var name:String {
+    switch self {
+    case .tl:
+    return "Turkish Lira"
+    case .dolar:
+    return  "Dolar"
+    case .sterlin:
+    return  "Sterlin"
+    case .euro:
+    return  "Euro"
+    case .ruble:
+    return  "Ruble"
+    case .yuan:
+    return "Yuan"
+    }
+  }
+
+  var image:String {
+    switch self {
+    case .tl:
+      return "tl"
+    case .dolar:
+      return "dolar"
+    case .sterlin:
+      return "sterlin"
+    case .euro:
+      return "euro"
+    case .ruble:
+      return "ruble"
+    case .yuan:
+      return "yuan"
+    }
+  }
+
+
 }
 
-
-enum CurrencyName:String {
-  
-  case tl = "Turkish Lira"
-  case dolar = "Dolar"
-  case sterlin = "Sterlin"
-  case euro = "Euro"
-  case ruble = "Ruble"
-  case yuan = "Yuan"
-}
-
-
-enum CurrencyImageName:String {
-
-  case tl = "tl"
-  case dolar = "dolar"
-  case sterlin = "sterlin"
-  case euro = "euro"
-  case ruble = "ruble"
-  case yuan = "yuan"
-}
-
-enum CurrencyCode:String,Codable {
-
-  case tl = "TRY"
-  case dolar = "USD"
-  case sterlin = "GBP"
-  case euro = "EUR"
-  case ruble = "RUB"
-  case yuan = "CNY"
-}

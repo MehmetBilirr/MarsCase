@@ -16,17 +16,17 @@ struct MainView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    CurrentAmountView(amount: amount)
+                  CurrentAmountView(amount: amount).padding()
                     
                     List {
                       ForEach(mainViewModel.currencies) { item in
                             CurrencyList(currency: item)
                         }
-                    }
+                    }.padding()
                     Button {
 
                     } label: {
-                        Label("Satın Al", systemImage: "plus").frame(maxWidth: .infinity,maxHeight: 10)
+                        Label("buy_it", systemImage: "plus").frame(maxWidth: .infinity,maxHeight: 10)
                     }.buttonStyle(.borderedProminent).tint(.black).buttonStyle(.borderedProminent)
                         .controlSize(.large).padding(.leading,20).padding(.trailing,20)
                     
@@ -34,7 +34,7 @@ struct MainView: View {
 
 
                     } label: {
-                        Label("Geçmiş İşlemler", systemImage: "clock.arrow.circlepath").frame(maxWidth: .infinity,maxHeight: 10)
+                        Label("past", systemImage: "clock.arrow.circlepath").frame(maxWidth: .infinity,maxHeight: 10)
                     }.buttonStyle(.borderedProminent).tint(.black).buttonStyle(.borderedProminent)
                         .controlSize(.large).padding(.leading,20).padding(.trailing,20)
                 }

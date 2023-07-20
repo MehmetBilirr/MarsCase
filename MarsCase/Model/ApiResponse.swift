@@ -8,6 +8,11 @@
 import Foundation
 
 struct ApiResponse: Codable {
-  let data: [String: [String: Double]]
+  let data: [String: CurrencyResponse]
 }
 
+
+
+struct CurrencyResponse:Codable {
+    let EUR, USD, GBP, RUB, CNY : Double
+}

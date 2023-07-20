@@ -12,7 +12,7 @@ struct CurrentAmountView: View {
     let amount:Double
     var body: some View {
         VStack {
-          Text("Merhaba, Mehmet Bilir!").foregroundColor(.gray).padding(.top,20)
+          Text("say_hi").foregroundColor(.gray)
             HStack {
               Text(String(amount.asCurrencyWith6Decimals())).font(.largeTitle).padding(.trailing)
                 CornerImage(imageName: "tl", frame: 25)
@@ -24,7 +24,7 @@ struct CurrentAmountView: View {
 
             }
             HStack {
-                Text("Cüzdan ID: 54221476").font(.subheadline).foregroundColor(.gray)
+                Text("wallet_no").font(.subheadline).foregroundColor(.gray)
                 Button {
                     
                 } label: {

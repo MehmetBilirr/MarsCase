@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  MarsCase
+
+  Created by Mehmet Bilir on 20.07.2023.
+  
+*/
+
+
+"say_hi" = "Merhaba Mehmet Bilir";
+"wallet_no" = "Cüzdan ID:53123423";
+"buy_it" = "Satın Al";
+"empty_message" = "Henüz bir işlemin bulunmuyor.";
+"purchase_d" = "Satın Alım";
+"home" = "Anasayfa";
+"past" = "Geçmiş İşlemler";
+"enter" = "Tutar giriniz.";
+"enter_amount" = "Satın almak istediğiniz tutarı giriniz.";
+"total_cost"= "Toplam Maliyet";
+"amount_purchased" = "Alınan fiyat:";

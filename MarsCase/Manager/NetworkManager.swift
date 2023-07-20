@@ -22,7 +22,6 @@ final class WebService {
     }
 
   func getData(route:Route) -> AnyPublisher<ApiResponse, Error> {
-      print(createRequest(route: route))
     return URLSession.shared.dataTaskPublisher(for: createRequest(route: route)!)
       .map({ $0.data })
       .decode(type: ApiResponse.self, decoder: JSONDecoder())

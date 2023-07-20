@@ -10,7 +10,6 @@
 		F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */; };
 		F031FE712A669F5100A5CD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F031FE702A669F5100A5CD61 /* Assets.xcassets */; };
 		F031FE742A669F5100A5CD61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */; };
-		F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */; };
 		F031FE862A66A06600A5CD61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE852A66A06600A5CD61 /* MainView.swift */; };
 		F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE872A66A0AC00A5CD61 /* PastView.swift */; };
 		F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */; };
@@ -39,6 +38,7 @@
 		F09EE6212A69466A001CC1CA /* SavedCurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */; };
 		F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6252A697A58001CC1CA /* ScaleText.swift */; };
 		F09EE62A2A697E93001CC1CA /* PopUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */; };
+		F09EE62D2A69A037001CC1CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09EE62F2A69A037001CC1CA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 		F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsCaseApp.swift; sourceTree = "<group>"; };
 		F031FE702A669F5100A5CD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F031FE782A669F5100A5CD61 /* MarsCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsCase.xcdatamodel; sourceTree = "<group>"; };
 		F031FE7A2A669F5100A5CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F031FE852A66A06600A5CD61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F031FE872A66A0AC00A5CD61 /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
@@ -73,6 +72,8 @@
 		F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrencyListView.swift; sourceTree = "<group>"; };
 		F09EE6252A697A58001CC1CA /* ScaleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleText.swift; sourceTree = "<group>"; };
 		F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModel.swift; sourceTree = "<group>"; };
+		F09EE62E2A69A037001CC1CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F09EE6302A69A08B001CC1CA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +118,8 @@
 				F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */,
 				F031FE702A669F5100A5CD61 /* Assets.xcassets */,
 				F031FE7A2A669F5100A5CD61 /* Info.plist */,
-				F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */,
 				F031FE722A669F5100A5CD61 /* Preview Content */,
+				F09EE62F2A69A037001CC1CA /* Localizable.strings */,
 			);
 			path = MarsCase;
 			sourceTree = "<group>";
@@ -285,6 +286,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = F031FE602A669F5000A5CD61;
 			packageReferences = (
@@ -306,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F031FE742A669F5100A5CD61 /* Preview Assets.xcassets in Resources */,
+				F09EE62D2A69A037001CC1CA /* Localizable.strings in Resources */,
 				F031FE712A669F5100A5CD61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +325,6 @@
 				F071AA052A68109200139136 /* String + Extension.swift in Sources */,
 				F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */,
 				F071AA0B2A68856100139136 /* EmptyView.swift in Sources */,
-				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
 				F09EE62A2A697E93001CC1CA /* PopUpViewModel.swift in Sources */,
 				F071A9F82A6803D600139136 /* UIApplication + Extension.swift in Sources */,
 				F031FE9F2A66E9DA00A5CD61 /* CornerImage.swift in Sources */,
@@ -349,11 +351,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F09EE62F2A69A037001CC1CA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09EE62E2A69A037001CC1CA /* en */,
+				F09EE6302A69A08B001CC1CA /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		F031FE7B2A669F5100A5CD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -414,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -478,9 +494,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,9 +523,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,19 +597,6 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F031FE782A669F5100A5CD61 /* MarsCase.xcdatamodel */,
-			);
-			currentVersion = F031FE782A669F5100A5CD61 /* MarsCase.xcdatamodel */;
-			path = MarsCase.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F031FE612A669F5000A5CD61 /* Project object */;
 }
