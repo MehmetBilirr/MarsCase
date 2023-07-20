@@ -35,9 +35,10 @@
 		F09EE6142A693AD5001CC1CA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F09EE6132A693AD5001CC1CA /* Realm */; };
 		F09EE6162A693AD5001CC1CA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F09EE6152A693AD5001CC1CA /* RealmSwift */; };
 		F09EE6182A693C1E001CC1CA /* SavedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */; };
-		F09EE61A2A693D33001CC1CA /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6192A693D33001CC1CA /* Migrator.swift */; };
+		F09EE61A2A693D33001CC1CA /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6192A693D33001CC1CA /* RealmManager.swift */; };
 		F09EE6212A69466A001CC1CA /* SavedCurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */; };
 		F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6252A697A58001CC1CA /* ScaleText.swift */; };
+		F09EE62A2A697E93001CC1CA /* PopUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,9 +69,10 @@
 		F071AA082A6860C600139136 /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
 		F071AA0A2A68856100139136 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrency.swift; sourceTree = "<group>"; };
-		F09EE6192A693D33001CC1CA /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		F09EE6192A693D33001CC1CA /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrencyListView.swift; sourceTree = "<group>"; };
 		F09EE6252A697A58001CC1CA /* ScaleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleText.swift; sourceTree = "<group>"; };
+		F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +134,10 @@
 		F031FE812A669FAE00A5CD61 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F09EE6282A697E30001CC1CA /* TabBar */,
+				F09EE6272A697E28001CC1CA /* Popup */,
 				F09EE6242A6968F3001CC1CA /* Past */,
 				F071A9F12A68007700139136 /* Main */,
-				F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */,
-				F031FE9A2A66E78D00A5CD61 /* PopupView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -198,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F071AA002A680DF800139136 /* NetworkManager.swift */,
-				F09EE6192A693D33001CC1CA /* Migrator.swift */,
+				F09EE6192A693D33001CC1CA /* RealmManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -217,6 +219,23 @@
 				F031FE872A66A0AC00A5CD61 /* PastView.swift */,
 			);
 			path = Past;
+			sourceTree = "<group>";
+		};
+		F09EE6272A697E28001CC1CA /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE9A2A66E78D00A5CD61 /* PopupView.swift */,
+				F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		F09EE6282A697E30001CC1CA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +323,7 @@
 				F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */,
 				F071AA0B2A68856100139136 /* EmptyView.swift in Sources */,
 				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
+				F09EE62A2A697E93001CC1CA /* PopUpViewModel.swift in Sources */,
 				F071A9F82A6803D600139136 /* UIApplication + Extension.swift in Sources */,
 				F031FE9F2A66E9DA00A5CD61 /* CornerImage.swift in Sources */,
 				F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */,
@@ -319,7 +339,7 @@
 				F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */,
 				F071AA092A6860C600139136 /* Date + Extension.swift in Sources */,
 				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
-				F09EE61A2A693D33001CC1CA /* Migrator.swift in Sources */,
+				F09EE61A2A693D33001CC1CA /* RealmManager.swift in Sources */,
 				F071A9FA2A6805EB00139136 /* Method.swift in Sources */,
 				F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */,
 				F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */,

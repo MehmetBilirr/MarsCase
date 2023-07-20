@@ -19,13 +19,15 @@ struct CurrencyList: View {
           CornerImage(imageName: currency.image.rawValue, frame: 50).padding(.leading)
            
             VStack {
-              Text(currency.name.rawValue).font(.subheadline).frame(alignment: .leading)
-              Text("\(currency.amount.reverse.asCurrencyWith2Decimals()) \(CurrencySign.tl.rawValue)").foregroundColor(currency.substract < 0.00 ? .green : .red).frame(alignment: .leading)
-                
-            }.padding(.leading)
+              ScaleText(text: currency.name.rawValue).font(.subheadline)
+              HStack {
+                ScaleText(text: "\(currency.amount.reverse.asCurrencyWith2Decimals())").foregroundColor(currency.substract < 0.00 ? .green : .red).frame(alignment: .leading)
+                Image(systemName:currency.substract < 0.00 ? "arrow.up" : "arrow.down").foregroundColor(currency.substract < 0.00 ? .green : .red)
+              }.padding(.leading)
 
-          Image(systemName:currency.substract < 0.00 ? "arrow.up" : "arrow.down").padding(.top).foregroundColor(currency.substract < 0.00 ? .green : .red)
-            Spacer()
+              }
+
+          Spacer()
             Button("Satın Al") {
                 showingPopup = true
             }.padding(.trailing).buttonStyle(.borderedProminent).tint(.black)
@@ -35,7 +37,7 @@ struct CurrencyList: View {
         }.sheet(isPresented: $showingPopup) {
             VStack {
               PopUpView(currency: currency)
-                    .presentationDetents([.height(UIScreen.main.bounds.height / 1.5)])
+                    .presentationDetents([.height(UIScreen.main.bounds.height / 1.4)])
             }
         }
     }

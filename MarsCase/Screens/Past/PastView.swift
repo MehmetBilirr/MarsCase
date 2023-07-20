@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealmSwift
+
 struct PastView: View {
   @ObservedResults(SavedCurrency.self) var savedCurrencies
     var body: some View {
@@ -20,8 +21,6 @@ struct PastView: View {
           }.onDelete(perform: $savedCurrencies.remove)
         }
       }
-
-        
     }
 }
 

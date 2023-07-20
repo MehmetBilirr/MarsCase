@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MarsCaseApp: App {
-    let migrator = Migrator()
+    let migrator = RealmManager()
     var body: some Scene {
         WindowGroup {
           let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")

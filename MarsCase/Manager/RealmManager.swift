@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class Migrator {
+class RealmManager {
 
     init() {
         updateSchema()
