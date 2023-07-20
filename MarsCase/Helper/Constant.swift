@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct Constant {
   static let api_key = "fca_live_apaW2pTdVBD3dKqdFA4NBmnJcCbgeerN58SbDYlP"

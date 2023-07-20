@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct MarsCaseApp: App {
-    let persistenceController = PersistenceController.shared
-
+    let migrator = Migrator()
     var body: some Scene {
         WindowGroup {
+          let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+          let _ = print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
             TabBarView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                
         }
     }
 }

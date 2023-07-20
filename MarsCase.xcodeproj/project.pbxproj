@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */; };
-		F031FE6F2A669F5100A5CD61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE6E2A669F5100A5CD61 /* ContentView.swift */; };
 		F031FE712A669F5100A5CD61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F031FE702A669F5100A5CD61 /* Assets.xcassets */; };
 		F031FE742A669F5100A5CD61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */; };
-		F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE752A669F5100A5CD61 /* Persistence.swift */; };
 		F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */; };
 		F031FE862A66A06600A5CD61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE852A66A06600A5CD61 /* MainView.swift */; };
 		F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031FE872A66A0AC00A5CD61 /* PastView.swift */; };
@@ -34,15 +32,18 @@
 		F071AA072A68110C00139136 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071AA062A68110C00139136 /* ApiResponse.swift */; };
 		F071AA092A6860C600139136 /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071AA082A6860C600139136 /* Date + Extension.swift */; };
 		F071AA0B2A68856100139136 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071AA0A2A68856100139136 /* EmptyView.swift */; };
+		F09EE6142A693AD5001CC1CA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F09EE6132A693AD5001CC1CA /* Realm */; };
+		F09EE6162A693AD5001CC1CA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F09EE6152A693AD5001CC1CA /* RealmSwift */; };
+		F09EE6182A693C1E001CC1CA /* SavedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */; };
+		F09EE61A2A693D33001CC1CA /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6192A693D33001CC1CA /* Migrator.swift */; };
+		F09EE6212A69466A001CC1CA /* SavedCurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F031FE692A669F5100A5CD61 /* MarsCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsCaseApp.swift; sourceTree = "<group>"; };
-		F031FE6E2A669F5100A5CD61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F031FE702A669F5100A5CD61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F031FE732A669F5100A5CD61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F031FE752A669F5100A5CD61 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F031FE782A669F5100A5CD61 /* MarsCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsCase.xcdatamodel; sourceTree = "<group>"; };
 		F031FE7A2A669F5100A5CD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F031FE852A66A06600A5CD61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		F071AA062A68110C00139136 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		F071AA082A6860C600139136 /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
 		F071AA0A2A68856100139136 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrency.swift; sourceTree = "<group>"; };
+		F09EE6192A693D33001CC1CA /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrencyListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09EE6162A693AD5001CC1CA /* RealmSwift in Frameworks */,
+				F09EE6142A693AD5001CC1CA /* Realm in Frameworks */,
 				F031FE992A66E37A00A5CD61 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,9 +111,7 @@
 				F031FE8C2A66A3A800A5CD61 /* CustomViews */,
 				F031FE812A669FAE00A5CD61 /* Screens */,
 				F031FE6C2A669F5100A5CD61 /* MarsCaseApp.swift */,
-				F031FE6E2A669F5100A5CD61 /* ContentView.swift */,
 				F031FE702A669F5100A5CD61 /* Assets.xcassets */,
-				F031FE752A669F5100A5CD61 /* Persistence.swift */,
 				F031FE7A2A669F5100A5CD61 /* Info.plist */,
 				F031FE772A669F5100A5CD61 /* MarsCase.xcdatamodeld */,
 				F031FE722A669F5100A5CD61 /* Preview Content */,
@@ -141,6 +145,7 @@
 				F031FE8F2A66ABFF00A5CD61 /* CurrencyList.swift */,
 				F031FE9E2A66E9DA00A5CD61 /* CornerImage.swift */,
 				F071AA0A2A68856100139136 /* EmptyView.swift */,
+				F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 		F031FE912A66AC1300A5CD61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F09EE61B2A6941A8001CC1CA /* Realm */,
 				F031FE922A66AC2500A5CD61 /* Currency.swift */,
 				F071AA062A68110C00139136 /* ApiResponse.swift */,
 			);
@@ -189,8 +195,17 @@
 			isa = PBXGroup;
 			children = (
 				F071AA002A680DF800139136 /* NetworkManager.swift */,
+				F09EE6192A693D33001CC1CA /* Migrator.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		F09EE61B2A6941A8001CC1CA /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +226,8 @@
 			name = MarsCase;
 			packageProductDependencies = (
 				F031FE982A66E37A00A5CD61 /* PopupView */,
+				F09EE6132A693AD5001CC1CA /* Realm */,
+				F09EE6152A693AD5001CC1CA /* RealmSwift */,
 			);
 			productName = MarsCase;
 			productReference = F031FE692A669F5100A5CD61 /* MarsCase.app */;
@@ -242,6 +259,7 @@
 			mainGroup = F031FE602A669F5000A5CD61;
 			packageReferences = (
 				F031FE972A66E37A00A5CD61 /* XCRemoteSwiftPackageReference "PopupView" */,
+				F09EE6122A693AD5001CC1CA /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = F031FE6A2A669F5100A5CD61 /* Products */;
 			projectDirPath = "";
@@ -275,12 +293,11 @@
 				F031FE902A66ABFF00A5CD61 /* CurrencyList.swift in Sources */,
 				F071AA0B2A68856100139136 /* EmptyView.swift in Sources */,
 				F031FE792A669F5100A5CD61 /* MarsCase.xcdatamodeld in Sources */,
-				F031FE762A669F5100A5CD61 /* Persistence.swift in Sources */,
 				F071A9F82A6803D600139136 /* UIApplication + Extension.swift in Sources */,
 				F031FE9F2A66E9DA00A5CD61 /* CornerImage.swift in Sources */,
 				F031FE882A66A0AC00A5CD61 /* PastView.swift in Sources */,
+				F09EE6182A693C1E001CC1CA /* SavedCurrency.swift in Sources */,
 				F071AA032A680E5900139136 /* Error.swift in Sources */,
-				F031FE6F2A669F5100A5CD61 /* ContentView.swift in Sources */,
 				F071AA072A68110C00139136 /* ApiResponse.swift in Sources */,
 				F071A9F32A68008200139136 /* MainViewModel.swift in Sources */,
 				F071A9FC2A68060C00139136 /* Route.swift in Sources */,
@@ -290,9 +307,11 @@
 				F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */,
 				F071AA092A6860C600139136 /* Date + Extension.swift in Sources */,
 				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
+				F09EE61A2A693D33001CC1CA /* Migrator.swift in Sources */,
 				F071A9FA2A6805EB00139136 /* Method.swift in Sources */,
 				F031FE6D2A669F5100A5CD61 /* MarsCaseApp.swift in Sources */,
 				F031FE8B2A66A0BC00A5CD61 /* TabBar.swift in Sources */,
+				F09EE6212A69466A001CC1CA /* SavedCurrencyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +522,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		F09EE6122A693AD5001CC1CA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +537,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F031FE972A66E37A00A5CD61 /* XCRemoteSwiftPackageReference "PopupView" */;
 			productName = PopupView;
+		};
+		F09EE6132A693AD5001CC1CA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F09EE6122A693AD5001CC1CA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		F09EE6152A693AD5001CC1CA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F09EE6122A693AD5001CC1CA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

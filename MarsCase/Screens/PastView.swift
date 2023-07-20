@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
-
+import RealmSwift
 struct PastView: View {
+  @ObservedResults(SavedCurrency.self) var savedCurrencies
     var body: some View {
-        VStack {
-            EmptyView()
-        }.background(Color.white)
+
+      if savedCurrencies.isEmpty {
+        EmptyView()
+      }else {
+          Text("add")
+      }
+
         
     }
 }

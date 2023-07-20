@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Currency:Identifiable {
     var id: String = UUID().uuidString
   static let fake = Self.init(image: .ruble, name: .tl, amount: 0,sign: .tl,substract: 1)
@@ -14,7 +15,7 @@ struct Currency:Identifiable {
     let name:CurrencyName
     let amount:Double
     let sign:CurrencySign
-   let substract:Double
+    let substract:Double
 }
 
 

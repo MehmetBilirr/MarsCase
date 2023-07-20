@@ -34,7 +34,7 @@ struct CurrencyList: View {
 
         }.sheet(isPresented: $showingPopup) {
             VStack {
-                PopUpView(currency: currency)
+              PopUpView(currency: currency)
                     .presentationDetents([.height(UIScreen.main.bounds.height / 1.5)])
             }
         }

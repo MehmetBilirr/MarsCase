@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PopUpView: View {
     let currency:Currency
     @State var money:String = ""
     @State var totalCost:String = ""
+  @ObservedResults(SavedCurrency.self) var savedCurrencies
+  @Environment(\.dismiss) private var dismiss
     var body: some View {
         
         NavigationView {
@@ -34,7 +37,10 @@ struct PopUpView: View {
                 }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
                 
                 Button {
-                    
+                save()
+                  print("adsasd")
+
+
                 } label: {
                     Text("Satın Al").frame(width: 200,height: 30)
                 }.padding(.all).buttonStyle(.borderedProminent).tint(.black)
@@ -44,6 +50,16 @@ struct PopUpView: View {
         }
         
     }
+
+  private func save(){
+    let savedCurrency = SavedCurrency()
+    savedCurrency.amount = currency.amount
+    savedCurrency.image = currency.image.rawValue
+    savedCurrency.sign = currency.sign.rawValue
+    savedCurrency.name = currency.name.rawValue
+    savedCurrency.date = Date()
+    $savedCurrencies.append(savedCurrency)
+  }
     
     private func getTotalCost(amount:String){
       guard let doubleNumber = Double(amount) else {return}
@@ -55,6 +71,6 @@ struct PopUpView: View {
 
 struct PopUpView_Previews: PreviewProvider {
     static var previews: some View {
-        PopUpView(currency: Currency.fake)
+      PopUpView(currency: Currency.fake)
     }
 }
