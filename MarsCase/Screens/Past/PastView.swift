@@ -16,7 +16,7 @@ struct PastView: View {
         EmptyView()
       }else {
         List {
-          ForEach(savedCurrencies, id: \.id) { currency in
+          ForEach(savedCurrencies.reversed(), id: \.id) { currency in
             SavedCurrencyListView(savedCurrent: currency)
           }.onDelete(perform: $savedCurrencies.remove)
         }

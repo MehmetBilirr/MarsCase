@@ -18,7 +18,7 @@ class PopupViewModel:ObservableObject {
     savedCurrency.image = currency.image.rawValue
     savedCurrency.sign = currency.sign.rawValue
     savedCurrency.name = currency.name.rawValue
-
+    savedCurrency.date = Date()
     savedCurrency.total = money
     $savedCurrencies.append(savedCurrency)
   }

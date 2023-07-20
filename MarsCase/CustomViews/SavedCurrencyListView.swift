@@ -14,8 +14,8 @@ struct SavedCurrencyListView: View {
         CornerImage(imageName: savedCurrent.image, frame: 50)
         VStack {
           ScaleText(text: "\(savedCurrent.name) Satın Alım")
-          ScaleText(text: "Alınan fiyat: \(savedCurrent.amount.reverse.asCurrencyWith2Decimals())").font(.footnote).foregroundColor(.gray)
-          ScaleText(text: savedCurrent.date.asString).font(.footnote).foregroundColor(.gray)
+          ScaleText(text: "Alınan fiyat: \(savedCurrent.amount.reverse.asCurrencyWith2Decimals())").font(.footnote).foregroundColor(.gray).padding(.top,1).padding(.bottom,1)
+          ScaleText(text: savedCurrent.date.dateAndTimetoString()).font(.footnote).foregroundColor(.gray)
         }.padding(.leading)
         Spacer()
         ScaleText(text: "\(savedCurrent.sign) \(savedCurrent.total)").font(.title2).padding(.leading).foregroundColor(.green)
