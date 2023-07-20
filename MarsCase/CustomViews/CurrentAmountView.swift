@@ -23,7 +23,6 @@ struct CurrentAmountView: View {
                 }
 
             }
-            
             HStack {
                 Text("Cüzdan ID: 54221476").font(.subheadline).foregroundColor(.gray)
                 Button {

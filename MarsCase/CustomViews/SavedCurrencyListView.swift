@@ -11,14 +11,14 @@ struct SavedCurrencyListView: View {
   let savedCurrent:SavedCurrency
     var body: some View {
       HStack {
-        CornerImage(imageName: savedCurrent.image, frame: 50).padding(.leading)
+        CornerImage(imageName: savedCurrent.image, frame: 50)
         VStack {
-          Text("\(savedCurrent.name) Satın Alım")
-          Text("Alınan fiyat: \(savedCurrent.amount.reverse.asCurrencyWith2Decimals())").font(.footnote).foregroundColor(.gray)
-          Text(savedCurrent.date.asString).font(.footnote).foregroundColor(.gray)
+          ScaleText(text: "\(savedCurrent.name) Satın Alım")
+          ScaleText(text: "Alınan fiyat: \(savedCurrent.amount.reverse.asCurrencyWith2Decimals())").font(.footnote).foregroundColor(.gray)
+          ScaleText(text: savedCurrent.date.asString).font(.footnote).foregroundColor(.gray)
         }.padding(.leading)
         Spacer()
-        Text("\(savedCurrent.sign) \(savedCurrent.total)").font(.title2).padding(.leading).foregroundColor(.green)
+        ScaleText(text: "\(savedCurrent.sign) \(savedCurrent.total)").font(.title2).padding(.leading).foregroundColor(.green)
         
       }
     }

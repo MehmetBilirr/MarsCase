@@ -37,6 +37,7 @@
 		F09EE6182A693C1E001CC1CA /* SavedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */; };
 		F09EE61A2A693D33001CC1CA /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6192A693D33001CC1CA /* Migrator.swift */; };
 		F09EE6212A69466A001CC1CA /* SavedCurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */; };
+		F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6252A697A58001CC1CA /* ScaleText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrency.swift; sourceTree = "<group>"; };
 		F09EE6192A693D33001CC1CA /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
 		F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCurrencyListView.swift; sourceTree = "<group>"; };
+		F09EE6252A697A58001CC1CA /* ScaleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				F031FE9E2A66E9DA00A5CD61 /* CornerImage.swift */,
 				F071AA0A2A68856100139136 /* EmptyView.swift */,
 				F09EE6202A69466A001CC1CA /* SavedCurrencyListView.swift */,
+				F09EE6252A697A58001CC1CA /* ScaleText.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */,
 				F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */,
 				F071A9F52A68038900139136 /* Double + Extension.swift in Sources */,
+				F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */,
 				F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */,
 				F071AA092A6860C600139136 /* Date + Extension.swift in Sources */,
 				F031FE862A66A06600A5CD61 /* MainView.swift in Sources */,
@@ -456,6 +460,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +490,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

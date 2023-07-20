@@ -12,39 +12,37 @@ struct PopUpView: View {
     let currency:Currency
     @State var money:String = ""
     @State var totalCost:String = ""
+  @FocusState private var amountIsFocused: Bool
   @ObservedResults(SavedCurrency.self) var savedCurrencies
   @Environment(\.dismiss) private var dismiss
     var body: some View {
-        
+
         NavigationView {
             VStack {
-               
-              CornerImage(imageName: currency.image.rawValue, frame: 100).padding(.all)
-              Text("₺ \(currency.amount.reverse.asCurrencyWith6Decimals())").font(.title).foregroundColor(.green).padding(.all)
+
+              CornerImage(imageName: currency.image.rawValue, frame: 100).padding(.top)
+              Text("\(currency.amount.reverse.asCurrencyWith6Decimals())").font(.title).foregroundColor(.green)
               Text("Satın almak istediğiniz \(currency.name.rawValue)").font(.body)
                 HStack {
                     
                     TextField("Tutar giriniz", text: $money).onChange(of: money) {
                         getTotalCost(amount: $0)
-                    }.padding(.leading).keyboardType(.numberPad)
+                    }.padding(.leading).keyboardType(.numberPad).focused($amountIsFocused)
                   Text(currency.sign.rawValue).padding(.trailing).font(.title)
-                }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
+                }.padding(.all).border(.gray,width: 0.5).cornerRadius(10)
                 
                 Text("Toplam Maliyet").font(.body).padding(.trailing)
                 HStack {
                   TextField("", text: $totalCost).padding(.leading).disabled(true)
                   Text(CurrencySign.tl.rawValue).font(.title).padding(.trailing)
-                }.padding(.all).border(.gray,width: 0.5).cornerRadius(10).padding()
-                
+                }.padding(.all).border(.gray,width: 0.5).cornerRadius(10)
                 Button {
                 save()
-                  print("adsasd")
-
-
+                  amountIsFocused = false
                 } label: {
                     Text("Satın Al").frame(width: 200,height: 30)
-                }.padding(.all).buttonStyle(.borderedProminent).tint(.black)
-                Spacer()
+                }.buttonStyle(.borderedProminent).tint(.black).padding()
+
 
             }.background(.white)
         }
