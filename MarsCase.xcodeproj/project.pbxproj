@@ -130,8 +130,8 @@
 		F031FE812A669FAE00A5CD61 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F09EE6242A6968F3001CC1CA /* Past */,
 				F071A9F12A68007700139136 /* Main */,
-				F031FE872A66A0AC00A5CD61 /* PastView.swift */,
 				F031FE8A2A66A0BC00A5CD61 /* TabBar.swift */,
 				F031FE9A2A66E78D00A5CD61 /* PopupView.swift */,
 			);
@@ -206,6 +206,14 @@
 				F09EE6172A693C1E001CC1CA /* SavedCurrency.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		F09EE6242A6968F3001CC1CA /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				F031FE872A66A0AC00A5CD61 /* PastView.swift */,
+			);
+			path = Past;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

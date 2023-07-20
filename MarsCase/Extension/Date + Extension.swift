@@ -18,6 +18,11 @@ extension Date {
       return Calendar.current.date(byAdding: .day, value: -2, to: self)!
   }
 
+  var asString:String {
+    let dateFormatter = DateFormatter()
+   return dateFormatter.string(from: self)
+  }
+
 
   func get2DayBefore()->String {
     let date = Date().day2Before
@@ -36,4 +41,6 @@ extension Date {
     return yesterday
 
   }
+
+
 }

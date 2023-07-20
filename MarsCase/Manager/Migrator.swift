@@ -16,7 +16,7 @@ class Migrator {
 
     func updateSchema() {
 
-        let config = Realm.Configuration(schemaVersion: 3) { migration, oldSchemaVersion in
+        let config = Realm.Configuration(schemaVersion: 4) { migration, oldSchemaVersion in
                 migration.enumerateObjects(ofType: SavedCurrency.className()) { _, newObject in
                     newObject!["category"] = ""
                 }

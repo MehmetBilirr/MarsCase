@@ -12,10 +12,10 @@ struct CurrentAmountView: View {
     let amount:Double
     var body: some View {
         VStack {
+          Text("Merhaba, Mehmet Bilir!").foregroundColor(.gray).padding(.top,20)
             HStack {
-                
-                Text(String(amount)).font(.largeTitle).padding(.trailing)
-                CornerImage(imageName: "tc", frame: 25)
+              Text(String(amount.asCurrencyWith6Decimals())).font(.largeTitle).padding(.trailing)
+                CornerImage(imageName: "tl", frame: 25)
                 Button {
                     
                 } label: {

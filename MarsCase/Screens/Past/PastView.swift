@@ -14,7 +14,11 @@ struct PastView: View {
       if savedCurrencies.isEmpty {
         EmptyView()
       }else {
-          Text("add")
+        List {
+          ForEach(savedCurrencies, id: \.id) { currency in
+            SavedCurrencyListView(savedCurrent: currency)
+          }.onDelete(perform: $savedCurrencies.remove)
+        }
       }
 
         

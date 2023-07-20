@@ -20,7 +20,7 @@ struct PopUpView: View {
             VStack {
                
               CornerImage(imageName: currency.image.rawValue, frame: 100).padding(.all)
-              Text("₺ \(pow(currency.amount,-1).asCurrencyWith2Decimals())").font(.title).foregroundColor(.green).padding(.all)
+              Text("₺ \(currency.amount.reverse.asCurrencyWith6Decimals())").font(.title).foregroundColor(.green).padding(.all)
               Text("Satın almak istediğiniz \(currency.name.rawValue)").font(.body)
                 HStack {
                     
@@ -58,13 +58,14 @@ struct PopUpView: View {
     savedCurrency.sign = currency.sign.rawValue
     savedCurrency.name = currency.name.rawValue
     savedCurrency.date = Date()
+    savedCurrency.total = money
     $savedCurrencies.append(savedCurrency)
   }
     
     private func getTotalCost(amount:String){
       guard let doubleNumber = Double(amount) else {return}
       let total = doubleNumber * pow(currency.amount,-1)
-      self.totalCost = total.asCurrencyWith2Decimals()
+      self.totalCost = total.asCurrencyWith6Decimals()
        
     }
 }

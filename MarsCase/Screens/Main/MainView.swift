@@ -10,14 +10,12 @@ import SwiftUI
 struct MainView: View {
     @StateObject var mainViewModel = MainViewModel()
     @State var showingPopup = false
-//    var amounts:[Currency] = [.init(image: "abd", name: "Dolar", amount: ,sign: Constant.dolar),.init(image: "ab", name: "Euro", amount: "19,20",sign: Constant.euro),.init(image: "eng", name: "Sterlin", amount: "25,45",sign: Constant.sterlin),.init(image: "rus", name: "Rus Rublesi", amount: "20,45",sign: Constant.ruble),.init(image: "china", name: "Yuan", amount: "20.45",sign: Constant.yuan)]
-    @State var amount : Double = 2315.9123
+    @State var amount : Double = 2315.91
     var body: some View {
         
         NavigationView {
             ZStack {
                 VStack {
-                    Text("Merhaba, Mehmet Bilir!").foregroundColor(.gray).padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 100))
                     CurrentAmountView(amount: amount).padding(.top)
                     Spacer()
                     
@@ -29,8 +27,7 @@ struct MainView: View {
                     }
                     
                     Button {
-                        
-                      mainViewModel.fetchMovies()
+
                     } label: {
                         Label("Satın Al", systemImage: "plus").frame(maxWidth: .infinity)
                     }.buttonStyle(.borderedProminent).tint(.black).buttonStyle(.borderedProminent)

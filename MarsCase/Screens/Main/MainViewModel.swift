@@ -19,10 +19,10 @@ class MainViewModel:ObservableObject {
   init(cancellables: Set<AnyCancellable> = [], currencies: [Currency] = [Currency]()) {
     self.cancellables = cancellables
     self.currencies = currencies
-    fetchMovies()
+    getData()
   }
 
-  func fetchMovies() {
+  private func getData() {
     webService.getData(route: .getData)
           .receive(on: DispatchQueue.main)
           .sink { completion in
