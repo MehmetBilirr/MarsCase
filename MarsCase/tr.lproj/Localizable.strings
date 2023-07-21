@@ -7,7 +7,7 @@
 */
 
 
-"say_hi" = "Merhaba Mehmet Bilir";
+"say_hi" = "Merhaba, Mehmet Bilir";
 "wallet_no" = "Cüzdan ID:53123423";
 "buy_it" = "Satın Al";
 "empty_message" = "Henüz bir işlemin bulunmuyor.";

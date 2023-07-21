@@ -11,11 +11,11 @@ import Foundation
 extension Date {
 
   var dayBefore: Date {
-      return Calendar.current.date(byAdding: .day, value: -2, to: self)!
+      return Calendar.current.date(byAdding: .day, value: -1, to: self)!
   }
 
   var day2Before: Date {
-      return Calendar.current.date(byAdding: .day, value: -3, to: self)!
+      return Calendar.current.date(byAdding: .day, value: -2, to: self)!
   }
 
   var asString:String {

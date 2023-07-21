@@ -7,7 +7,7 @@
 */
 
 
-"say_hi" = "Hello Mehmet Bilir!";
+"say_hi" = "Hello, Mehmet Bilir!";
 "wallet_no" = "Wallet ID:53123423";
 "buy_it" = "Purchase";
 "empty_message" = "There is no action yet.";

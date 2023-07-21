@@ -27,7 +27,7 @@ struct CurrencyList: View {
 
               }
           Spacer()
-          Image(systemName:currency.substract < 0.00 ? "arrow.up" : "arrow.down").foregroundColor(currency.substract < 0.00 ? .green : .red).padding(.leading)
+          Image(systemName:currency.substract < 0.00 ? "arrow.up" : "arrow.down").foregroundColor(currency.substract < 0.00 ? .green : .red)
 
           Spacer()
             Button("buy_it") {

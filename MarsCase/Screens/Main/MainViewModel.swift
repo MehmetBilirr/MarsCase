@@ -28,9 +28,9 @@ class MainViewModel:ObservableObject {
       .sink { completion in
         switch completion {
         case .finished:
-          print("Finished getting movies")
+          print("Finished getting Currencies")
         case .failure(let error):
-          print("Error getting movies: \(error)")
+          print("Error getting Currencies: \(error)")
         }
       } receiveValue: { [weak self] datas in
 
