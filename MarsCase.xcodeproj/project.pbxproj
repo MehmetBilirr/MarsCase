@@ -39,6 +39,7 @@
 		F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6252A697A58001CC1CA /* ScaleText.swift */; };
 		F09EE62A2A697E93001CC1CA /* PopUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */; };
 		F09EE62D2A69A037001CC1CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09EE62F2A69A037001CC1CA /* Localizable.strings */; };
+		F0A926562A6A6F45001F59E7 /* CurrencyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A926552A6A6F45001F59E7 /* CurrencyType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		F09EE6292A697E93001CC1CA /* PopUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModel.swift; sourceTree = "<group>"; };
 		F09EE62E2A69A037001CC1CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F09EE6302A69A08B001CC1CA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0A926552A6A6F45001F59E7 /* CurrencyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				F071A9F92A6805EB00139136 /* Method.swift */,
 				F071A9FB2A68060C00139136 /* Route.swift */,
 				F071AA022A680E5900139136 /* Error.swift */,
+				F0A926552A6A6F45001F59E7 /* CurrencyType.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				F071A9FC2A68060C00139136 /* Route.swift in Sources */,
 				F031FE8E2A66A3DC00A5CD61 /* CurrentAmountView.swift in Sources */,
 				F031FE932A66AC2500A5CD61 /* Currency.swift in Sources */,
+				F0A926562A6A6F45001F59E7 /* CurrencyType.swift in Sources */,
 				F071A9F52A68038900139136 /* Double + Extension.swift in Sources */,
 				F09EE6262A697A58001CC1CA /* ScaleText.swift in Sources */,
 				F031FEA22A66EC7700A5CD61 /* Constant.swift in Sources */,
