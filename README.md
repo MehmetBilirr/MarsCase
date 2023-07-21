@@ -16,5 +16,9 @@
 # App Preview
  
 
-https://github.com/MehmetBilirr/MarsCase/assets/101524266/448fff48-90f0-411a-abfb-4932753ab390
+
+https://github.com/MehmetBilirr/MarsCase/assets/101524266/54dee3fa-6250-44ef-b0bd-fbf64c25be22
+
+
+
 
